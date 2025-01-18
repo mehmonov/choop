@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <script defer src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" text-gray-800 bg-amber-950">
+  <div class="container mx-auto p-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Typing Speed Test</h1>
+
+    <!-- Language Toggle -->
+    <div id="language-toggle" class="text-center mb-6">
+      <button id="latin-btn" class="bg-blue-500 text-white px-4 py-2 rounded mr-2">Lotin</button>
+      <button id="cyrillic-btn" class="bg-green-500 text-white px-4 py-2 rounded">Кирилл</button>
+    </div>
+
+    <!-- Test Text -->
+    <p id="test-text" class="bg-white p-4 rounded shadow text-lg">
+      The quick brown fox jumps over the lazy dog.
+    </p>
+
+    <!-- Typing Area -->
+    <textarea id="typing-area" class="mt-4 p-4 w-full border rounded shadow" rows="4" placeholder="Yozishni boshlang..."></textarea>
+
+    <!-- Results -->
+    <div id="results" class="mt-6 hidden text-center">
+      <p class="text-lg font-bold">Natijalar:</p>
+      <p>Yozish tezligi: <span id="speed">0</span> WPM</p>
+      <p>Xatolar soni: <span id="errors">0</span></p>
+      <p>Umumiy vaqt: <span id="time">0</span> sekund</p>
+      <p>Xato so‘zlar: <span id="incorrect-words"></span></p>
+
+    </div>
+
+    <!-- Start Button -->
+    <div class="text-center mt-6">
+      <button id="start-btn" class="bg-blue-500 text-white px-4 py-2 rounded">Testni boshlash</button>
+    </div>
+  </div>
+</body>
+</html>
